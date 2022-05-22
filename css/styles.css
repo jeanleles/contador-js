@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0D1117;
+    color: #F4F3F4;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #191919;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 60px 20px 40px;
+    max-width: 320px;
+    margin: 100px auto;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.box-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    border: 6px solid #00DF89;
+    border-radius: 100px;
+    margin: 40px;
+}
+
+.currentNumber {
+    font-size: 100px;
+    color: #00DF89;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.buttons button {
+    padding: 10px 14px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 44px;
+    line-height: 44px;
+    background-color: #00DF89;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #fff;
+    width: calc(50% - 5px);
+    border-radius: 4px;
+    transition: .3s; 
+}
+
+.buttons button:first-child {
+    margin-right: 20px;
+}
+
+.buttons button:hover {
+    opacity: 0.6;
+}
+
+.button-disabled {
+    opacity: 0.6;
+}
+
+.zero {
+    margin-top: 60px;
+    background-color: #00DF89;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 6px 20px;
+    border-radius: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.zero:hover {
+    opacity: .6;
+}
